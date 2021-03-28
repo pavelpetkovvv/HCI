@@ -1262,7 +1262,7 @@ ol {
 }
 
 .copyright__widget {
-  text-align: right;
+  
 }
 .copyright__widget ul li {
   list-style: none;
@@ -4034,10 +4034,11 @@ height: 70px;
 
 .disabled {
     pointer-events:none;
-<<<<<<< HEAD
     
 }
-=======
+
+span.popuptext{
+	font-size: smaller;
 }
 
->>>>>>> e6a9f92fa3ee0a206e092ddeac4b62ed1dced75a
+

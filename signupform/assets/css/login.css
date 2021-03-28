@@ -83,3 +83,8 @@ body {
 	font-size: 12px;
 	
 }
+
+img[type=back]{
+	margin-left: 1450px;
+  margin-top:-80px;
+}
