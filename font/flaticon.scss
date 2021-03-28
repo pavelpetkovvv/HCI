@@ -1,0 +1,49 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?7888d632716f36f2f9e6187307f8426a") format("truetype"),
+url("./flaticon.woff?7888d632716f36f2f9e6187307f8426a") format("woff"),
+url("./flaticon.woff2?7888d632716f36f2f9e6187307f8426a") format("woff2"),
+url("./flaticon.eot?7888d632716f36f2f9e6187307f8426a#iefix") format("embedded-opentype"),
+url("./flaticon.svg?7888d632716f36f2f9e6187307f8426a#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "appetizer": "\f101",
+    "food": "\f102",
+    "green-sause": "\f103",
+    "piece-of-cake": "\f104",
+    "salad": "\f105",
+    "soup": "\f106",
+);
+
+.flaticon-appetizer:before {
+    content: map-get($flaticon-map, "appetizer");
+}
+.flaticon-food:before {
+    content: map-get($flaticon-map, "food");
+}
+.flaticon-green-sause:before {
+    content: map-get($flaticon-map, "green-sause");
+}
+.flaticon-piece-of-cake:before {
+    content: map-get($flaticon-map, "piece-of-cake");
+}
+.flaticon-salad:before {
+    content: map-get($flaticon-map, "salad");
+}
+.flaticon-soup:before {
+    content: map-get($flaticon-map, "soup");
+}
