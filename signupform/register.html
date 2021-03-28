@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/login.css">
+  <script src="../js/loginCustom.js"></script>
 </head>
 <body>
 	
@@ -36,12 +37,12 @@
                     <input type="password" name="password" id="password" class="form-control" placeholder="Парола">
                   </div>
 				  <div class="form-group mb-4">
-                    <label for="password" class="sr-only">Password</label>
-                    <input type="password" name="password" id="password" class="form-control" placeholder="Повтори паролата">
+                    <label for="repeatPassword" class="sr-only">Password</label>
+                    <input type="password" name="repeatPassword" id="repeatPassword" class="form-control" placeholder="Повтори паролата">
                   </div>
 				  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
 				  <label id="agreement"> Прочетох и съм съгласен с Общите условия на MasterChef Course, Политиката за конфиденциалност</label><br>
-                  <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Регистрация">
+                  <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Регистрация" onclick="register()">
 			  </form>
                 </nav>
             </div>
