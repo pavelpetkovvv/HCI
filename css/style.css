@@ -3054,7 +3054,7 @@ ol {
 .contact__address {
   padding-bottom: 40px;
   border-bottom: 1px solid #e8eff4;
-  margin-bottom: 70px;
+  margin-bottom: -100px;
 }
 
 .contact__address__item {
@@ -3604,7 +3604,7 @@ ol {
     display: none;
   }
 
-  .header .container {
+  .header .{
     position: relative;
   }
 
