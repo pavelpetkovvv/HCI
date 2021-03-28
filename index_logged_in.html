@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="font/flaticon.css">
 	<link rel="stylesheet" type="text/css" href="css/popup.css">
+    <script defer src = "./js/loginCustom.js"></script>
 
 </head>
 
@@ -49,8 +50,14 @@
                                 <a href="./index.html"><img id="lo" src="img/logo1.png" alt=""></a>
                             </div>
                             <div class="header__top__right">
-<a type="button" href= "signupform/register.html" class="btn btn-danger">Sign Up</a>
-<a type="button" href= "signupform/sign.html" class="btn btn-outline-danger">Log In</a>
+                                <div class="testimonial__author">
+                                    <div class="testimonial__author__pic">
+                                        <img src="img/testimonial/ta-1.jpg" alt="">
+                                    </div>
+                                    <div class="testimonial__author__text">
+                                        <h5>Kerry D.Silva</h5>
+                                        <button class="btn btn-danger" onclick="logout1()">Изход</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -68,33 +75,9 @@
 							<li class="active"><a href="./index.html">Начална страница</a></li>
 							<li><a href="./shop.html">Рецепти</a></li>
                             <li>
-                                <a class="popup" onmouseover="popupShow()" onmouseout="popupHide()" href="./game.html">Тестове
-                                    <span class="popuptext" id="myPopup">Активно само за регистирани потребители.</span>
-                                </a>
+                                <a href="./game.html">Тестове</a>
                             </li>    
-                            <script>
-                            // When the user hovers over div, open the popup
-                            function popupShow() {
-                              var popup = document.getElementById("myPopup");
-                              popup.classList.toggle("show");
-                            }
-
-                            // When the user hovers out of div, close the popup
-                            function popupHide() {
-                              var popup = document.getElementById("myPopup");
-                              //use the function to specify after how much tiime to hide the popup (in milliseconds)
-                              //sleep(1000);
-                              popup.classList.toggle("show");
-                            }
-
-                            function sleep(milliseconds) {
-                             const date = Date.now();
-                            let currentDate = null;
-                             do {
-                                     currentDate = Date.now();
-                                } while (currentDate - date < milliseconds);
-                            }
-                            </script>
+                            
 
                             <li><a href="./contact.html">Контакти</a></li>
 					
