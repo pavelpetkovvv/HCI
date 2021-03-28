@@ -1262,7 +1262,7 @@ ol {
 }
 
 .copyright__widget {
-  text-align: right;
+  
 }
 .copyright__widget ul li {
   list-style: none;
@@ -4036,3 +4036,9 @@ height: 70px;
     pointer-events:none;
     
 }
+
+span.popuptext{
+	font-size: smaller;
+}
+
+
