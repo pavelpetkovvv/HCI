@@ -2197,7 +2197,7 @@ ol {
   width: 150px;
 }
 .wishlist__cart__table table tbody tr td.cart__btn {
-  width: 190px;
+  width: 220px;
 }
 .wishlist__cart__table table tbody tr td.cart__btn .primary-btn {
   background: #111111;
@@ -3604,7 +3604,7 @@ ol {
     display: none;
   }
 
-  .header .{
+  .header {
     position: relative;
   }
 

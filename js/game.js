@@ -19,36 +19,36 @@ var text = {
           "category":"General Knowledge",
           "type":"multiple",
           "difficulty":"easy",
-          "question":"Как се казва Иван",
-          "correct_answer":"Иван",
+          "question":"В кои супи се слага фиде?",
+          "correct_answer":"Бистри супи",
           "incorrect_answers":[
-             "Стоян",
-             "Крум",
-             "Гошо"
+             "Крем супа",
+             "Гаспачо",
+             "Шкембе чорба"
           ]
        },
        {
         "category":"General Knowledge",
         "type":"multiple",
         "difficulty":"easy",
-        "question":"Как се казва Криси",
-        "correct_answer":"Криси",
+        "question":"Какво не се слага в питка?",
+        "correct_answer":"Домати",
         "incorrect_answers":[
-           "Мария",
-           "Александра",
-           "Гергана"
+           "Захар",
+           "Прясно мляко",
+           "Сол"
         ]
      },
      {
         "category":"General Knowledge",
         "type":"multiple",
         "difficulty":"easy",
-        "question":"Как се казва Павел",
-        "correct_answer":"Павел",
+        "question":"С какво можем да заместим яйцата в рецептите?",
+        "correct_answer":"Ленено семе",
         "incorrect_answers":[
-           "Стоян",
-           "Петър",
-           "Стамен"
+           "Вода",
+           "Кисело мляко",
+           "Сода"
         ]
      }
     ]
@@ -110,7 +110,7 @@ getNewQuestion = () => {
         
         //28.03.2021 - Pavel Petkov
         //made it to return index.html
-        return window.location.assign('./index.html');
+        return window.location.assign('./allgames.html');
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
