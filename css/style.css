@@ -4069,3 +4069,11 @@ width: 50px;
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
 }
+
+/*button-fav*/
+button[class="favourites"]{
+	border-color: white;
+	background: white;
+	border: none;
+	color: #cf2e44;
+}
