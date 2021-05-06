@@ -92,11 +92,16 @@
     <!-- Breadcrumb End -->
 <script>
 
-function change() // no ';' here
+function change(buttonID) // no ';' here
 {
-    var elem = document.getElementById("myButton1");
-    if (elem.value=="Close Curtain") elem.value = "Open Curtain";
-    else elem.value = "Close Curtain";
+    var element = document.getElementById(buttonID);
+    var imageSrc = element.getAttribute("src");
+    if(imageSrc == "./img/heart-black.png"){
+        element.setAttribute("src", "./img/heart-red.png");
+    }
+    else{ 
+        element.setAttribute("src", "./img/heart-black.png");
+    }
 }
 
 </script>
@@ -109,12 +114,13 @@ function change() // no ';' here
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-1.jpg">
+                            <input id="myButton1" class="like-button" onclick='change(myButton1.id)' type="image" src="./img/heart-red.png"/>
                             <div class="product__label">
                                 <span>Супи</span>
 								</div>
                         </div>
                         <div class="product__item__text">
-						<input onclick="change()" type="button" value="♥" id="myButton1"></input>
+                            
                           
                             <div class="product__item__price">Супа топчета</div>
                             <div class="cart_add">
@@ -126,6 +132,7 @@ function change() // no ';' here
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-2.jpg">
+                            <input id="myButton2" class="like-button" onclick='change(myButton2.id)' type="image" src="./img/heart-red.png"/>
                             <div class="product__label">
                                 <span>Сосове</span>
                             </div>
