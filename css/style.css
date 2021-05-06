@@ -4080,7 +4080,7 @@ button[class="favourites"]{
 
 .like-button{
   position: absolute;
-  height: 25px;
+  height: 35px;
   right: 5px;
   bottom: 5px;
 }
