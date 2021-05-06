@@ -4069,10 +4069,6 @@ width: 50px;
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 2c21fc5ada2d5d8140c3e53d362f3af8163bf61b
 
 /*button-fav*/
 button[class="favourites"]{
@@ -4082,7 +4078,6 @@ button[class="favourites"]{
 	color: #cf2e44;
 }
 
-<<<<<<< HEAD
 button[class="btn btn-primary profile-button"]{
 	  background: #cf2e44; 
 	  border-color: #cf2e44; 
@@ -4099,6 +4094,7 @@ button[class="btn btn-primary profile-button"]:hover{
   border: 2px solid #cf2e44;
   padding: 5px;
   margin: 20px 0px 0px 115px;
+}
 
 .like-button{
   position: absolute;
