@@ -4102,3 +4102,7 @@ button[class="btn btn-primary profile-button"]:hover{
   right: 5px;
   bottom: 5px;
 }
+
+iframe[id="video"]{
+	margin: 10px 0px 0px 10%;
+}

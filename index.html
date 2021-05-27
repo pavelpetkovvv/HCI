@@ -67,7 +67,34 @@
                             
 							<li class="active"><a href="./index.html">Начална страница</a></li>
 							<li><a href="./shop.html">Рецепти</a></li>
-							<li><a href="./shop.html">Q&A</a></li>
+							<li>
+                                <a class="popup" onmouseover="popupShow1()" onmouseout="popupHide1()">Q&A
+                                    <span class="popuptext" id="myPopup1">Активно само за регистирани потребители.</span>
+                                </a>
+							</li>   
+							<script>
+                            // When the user hovers over div, open the popup
+                            function popupShow1() {
+                              var popup = document.getElementById("myPopup1");
+                              popup.classList.toggle("show");
+                            }
+
+                            // When the user hovers out of div, close the popup
+                            function popupHide1() {
+                              var popup = document.getElementById("myPopup1");
+                              //use the function to specify after how much tiime to hide the popup (in milliseconds)
+                              //sleep(1000);
+                              popup.classList.toggle("show");
+                            }
+
+                            function sleep(milliseconds) {
+                             const date = Date.now();
+                            let currentDate = null;
+                             do {
+                                     currentDate = Date.now();
+                                } while (currentDate - date < milliseconds);
+                            }
+                            </script>
                             <li>
                                 <a class="popup" onmouseover="popupShow()" onmouseout="popupHide()">Тестове
                                     <span class="popuptext" id="myPopup">Активно само за регистирани потребители.</span>
@@ -116,7 +143,7 @@
                         <div class="col-lg-8">
                             <div class="hero__text">
                                 <h2>Рецептите не работят, освен ако не използвате сърцето си.!</h2>
-                                <a href="#" class="primary-btn">Към рецептите</a>
+                                <a href="./shop.html" class="primary-btn">Към рецептите//не работи</a>
                             </div>
                         </div>
                     </div>
@@ -127,8 +154,7 @@
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-8">
                             <div class="hero__text">
-                                <h2>Making your life sweeter one bite at a time!</h2>
-                                <a href="#" class="primary-btn">Our cakes</a>
+                                <h2>Готварството не е химия. То е изкуство. То изисква инстинкт и вкус, а не точни мерки.</h2>
                             </div>
                         </div>
                     </div>
