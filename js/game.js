@@ -55,14 +55,161 @@ var text = {
         "category":"General Knowledge",
         "type":"multiple",
         "difficulty":"easy",
-        "question":"aaaaaaaaaaaaaa?",
-        "correct_answer":"Ленено семе",
+        "question":"Кой е най-добрият начин за съхранение на подправки и чай?",
+		"hint":"hintche",
+        "correct_answer":"херметически затворени контейнери, на по-тъмни и хладни места",
         "incorrect_answers":[
-           "Вода",
-           "Кисело мляко",
-           "Сода"
+           "в хладилника",
+           "в найлонови торбички на тъмно място",
+           "в хартиени торбички, на влажно място"
+        ]
+     },
+	 {
+        "category":"General Knowledge",
+        "type":"multiple",
+        "difficulty":"easy",
+        "question":"От коя страна се слага алуминиевото фолио при печене?",
+		"hint":"hintche",
+        "correct_answer":"Няма значение при печене под 500 градуса",
+        "incorrect_answers":[
+           "От лъскавата",
+           "От матовата",
+           "Зависи от производителя на фолиото"
+        ]
+     },
+	 {
+        "category":"General Knowledge",
+        "type":"multiple",
+        "difficulty":"easy",
+        "question":"От коя страна се слага алуминиевото фолио при печене?",
+		"hint":"hintche",
+        "correct_answer":"Няма значение при печене под 500 градуса",
+        "incorrect_answers":[
+           "От лъскавата",
+           "От матовата",
+           "Зависи от производителя на фолиото"
+        ]
+     },
+	 {
+        "category":"General Knowledge",
+        "type":"multiple",
+        "difficulty":"easy",
+        "question":"Защо плодовете и зеленчуците се съсипват по-бързо?",
+		"hint":"hintche",
+        "correct_answer":"измити са",
+        "incorrect_answers":[
+           "съхраняват се в хладилник",
+           "съхраняват се на място, лишено от слъчнчева светлина",
+           "не са прибрани в хартиени торби"
+        ]
+     },
+	 {
+        "category":"General Knowledge",
+        "type":"multiple",
+        "difficulty":"easy",
+        "question":"Защо белтъците не стават на сняг? (посочете НЕПРАВИЛНИЯ отговор)",
+		"hint":"hintche",
+        "correct_answer":"яйцата са пресни",
+        "incorrect_answers":[
+           "използван е пластмасов съд, в който да се разбиват",
+           "има попаднала вода в съда",
+           "попаднал е жълтък"
+        ]
+     },
+	 {
+        "category":"General Knowledge",
+        "type":"multiple",
+        "difficulty":"easy",
+        "question":"Защо кексът спада? (посочете НЕПРАВИЛНИЯ отговор)",
+		"hint":"hintche",
+        "correct_answer":"кексът е изваден директно от топла фурна",
+        "incorrect_answers":[
+           "яйцата, които са използвани са пресни",
+           "съдът, в който е разбит кекса е пластмасов",
+           "захарта е била мокра"
+        ]
+     },
+	 {
+        "category":"General Knowledge",
+        "type":"multiple",
+        "difficulty":"easy",
+        "question":"Как се съхраняват правилно гъбите?",
+		"hint":"hintche",
+        "correct_answer":"в хартиена торбичка",
+        "incorrect_answers":[
+           "в найлонова торбичка",
+           "на тъмно място",
+           "на влажно място"
+        ]
+     },
+	 {
+        "category":"General Knowledge",
+        "type":"multiple",
+        "difficulty":"easy",
+        "question":"От какво се прави оризовото олио?",
+		"hint":"hintche",
+        "correct_answer":"от оризово зърно /оризови трици/",
+        "incorrect_answers":[
+           "от ферментирал ориз",
+           "от сварен ориз",
+           "от оризови зърна, заляти с вода и престояли над 20 дни"
+        ]
+     },
+	 {
+        "category":"General Knowledge",
+        "type":"multiple",
+        "difficulty":"easy",
+        "question":"Кое е другото наименование на пречистеното масло?",
+		"hint":"hintche",
+        "correct_answer":"ГХИ",
+        "incorrect_answers":[
+           "свинска мас",
+           "рафинирана мас",
+           "нерафинирана мас"
+        ]
+     },
+	 {
+        "category":"General Knowledge",
+        "type":"multiple",
+        "difficulty":"easy",
+        "question":"Кое е другото наименование на пречистеното масло?",
+		"hint":"hintche",
+        "correct_answer":"ГХИ",
+        "incorrect_answers":[
+           "свинска мас",
+           "рафинирана мас",
+           "нерафинирана мас"
+        ]
+     },
+	 {
+        "category":"General Knowledge",
+        "type":"multiple",
+        "difficulty":"easy",
+        "question":"Кокосовото масло НЕ може да се използва за?",
+		"hint":"hintche",
+        "correct_answer":"салати",
+        "incorrect_answers":[
+           "печене",
+           "сотиране",
+           "пържене"
+        ]
+     },
+	 {
+        "category":"General Knowledge",
+        "type":"multiple",
+        "difficulty":"easy",
+        "question":"Сусамовото олио е известно в?",
+		"hint":"hintche",
+        "correct_answer":"азиатската кухня",
+        "incorrect_answers":[
+           "балканската кухня",
+           "италианската кухня",
+           "норвежката кухня"
         ]
      }
+	 
+	 
+	 
     ]
  }
 
@@ -104,7 +251,7 @@ fetch(
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 4; //enter the number of questions you want to be loaded
+const MAX_QUESTIONS = 15; //enter the number of questions you want to be loaded
 
 startGame = () => {
     questionCounter = 0;
