@@ -143,7 +143,6 @@
                         <div class="col-lg-8">
                             <div class="hero__text">
                                 <h2>Рецептите не работят, освен ако не използвате сърцето си.!</h2>
-                                <a href="./shop.html" class="primary-btn">Към рецептите//не работи</a>
                             </div>
                         </div>
                     </div>
@@ -215,6 +214,23 @@
     </div>
     <!-- Categories Section End -->
 
+
+    <script>
+
+        function change(buttonID) // no ';' here
+        {
+            var element = document.getElementById(buttonID);
+            var imageSrc = element.getAttribute("src");
+            if(imageSrc == "./img/heart-black.png"){
+                element.setAttribute("src", "./img/heart-red.png");
+            }
+            else{ 
+                element.setAttribute("src", "./img/heart-black.png");
+            }
+        }
+        
+        </script>
+
     <!-- Product Section Begin -->
     <section class="product spad">
         <div class="container">
@@ -227,6 +243,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-1.jpg">
+                            <input id="myButton1" class="like-button" onclick='change(myButton1.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Супи</span>
                             </div>
@@ -242,6 +259,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-2.jpg">
+                            <input id="myButton2" class="like-button" onclick='change(myButton2.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Сосове</span>
                             </div>
@@ -257,6 +275,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-3.jpg">
+                            <input id="myButton3" class="like-button" onclick='change(myButton3.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Салати</span>
                             </div>
@@ -273,6 +292,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-4.jpg">
+                            <input id="myButton4" class="like-button" onclick='change(myButton4.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Десерти</span>
                             </div>
@@ -289,6 +309,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-5.jpg">
+                            <input id="myButton5" class="like-button" onclick='change(myButton5.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Предястия</span>
                             </div>
@@ -305,6 +326,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-6.jpg">
+                            <input id="myButton6" class="like-button" onclick='change(myButton6.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Основни ястия</span>
                             </div>
@@ -321,6 +343,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-7.jpg">
+                            <input id="myButton7" class="like-button" onclick='change(myButton7.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Десерти</span>
                             </div>
@@ -337,6 +360,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-8.jpg">
+                            <input id="myButton8" class="like-button" onclick='change(myButton8.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Основни ястия</span>
                             </div>
