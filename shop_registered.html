@@ -59,9 +59,16 @@
                                 <a href="./index.html"><img id="lo" src="img/logo1.png" alt=""></a>
                             </div>
                             <div class="header__top__right">
-<button type="button" class="btn btn-danger">Sign Up</button>
-<button type="button" class="btn btn-outline-danger">Log In</button>
+                                <div class="testimonial__author">
+                                    <div class="testimonial__author__pic">
+                                        <img src="img/profile_pictures/pavel_profilepic.jpg" alt="">
+                                    </div>
+                                    <div class="testimonial__author__text">
+                                        <h5>Димитър Димитров</h5>
+                                        <button class="btn btn-danger" onclick="logout1()">Изход</button>
+                                    </div>
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -76,66 +83,11 @@
                     <nav class="header__menu mobile-menu">
                         <ul>
                             
-							<li ><a href="./index.html">Начална страница</a></li>
-							<li class="active"><a href="./shop.html">Рецепти</a></li>
-							<li>
-                                <a class="popup" onmouseover="popupShow1()" onmouseout="popupHide1()">Q&A
-                                    <span class="popuptext" id="myPopup1">Активно само за регистирани потребители.</span>
-                                </a>
-							</li>   
-							<script>
-                            // When the user hovers over div, open the popup
-                            function popupShow1() {
-                              var popup = document.getElementById("myPopup1");
-                              popup.classList.toggle("show");
-                            }
-
-                            // When the user hovers out of div, close the popup
-                            function popupHide1() {
-                              var popup = document.getElementById("myPopup1");
-                              //use the function to specify after how much tiime to hide the popup (in milliseconds)
-                              //sleep(1000);
-                              popup.classList.toggle("show");
-                            }
-
-                            function sleep(milliseconds) {
-                             const date = Date.now();
-                            let currentDate = null;
-                             do {
-                                     currentDate = Date.now();
-                                } while (currentDate - date < milliseconds);
-                            }
-                            </script>
-                            <li>
-                                <a class="popup" onmouseover="popupShow()" onmouseout="popupHide()">Тестове
-                                    <span class="popuptext" id="myPopup">Активно само за регистирани потребители.</span>
-                                </a>
-                            </li>    
-                            <script>
-                            // When the user hovers over div, open the popup
-                            function popupShow() {
-                              var popup = document.getElementById("myPopup");
-                              popup.classList.toggle("show");
-                            }
-
-                            // When the user hovers out of div, close the popup
-                            function popupHide() {
-                              var popup = document.getElementById("myPopup");
-                              //use the function to specify after how much tiime to hide the popup (in milliseconds)
-                              //sleep(1000);
-                              popup.classList.toggle("show");
-                            }
-
-                            function sleep(milliseconds) {
-                             const date = Date.now();
-                            let currentDate = null;
-                             do {
-                                     currentDate = Date.now();
-                                } while (currentDate - date < milliseconds);
-                            }
-                            </script>
-
-                            <li><a href="./contact.html">Контакти</a></li>
+							<li><a href="./index_logged_in.html">Начална страница</a></li>
+							<li class="active" ><a href="./shop_registered.html">Рецепти</a></li>
+							<li><a href="./QA.html">Q&A</a></li>   
+							<li><a href="./allgames.html">Тестове</a></li> 
+                            <li><a href="./contact_logged_in.html">Контакти</a></li>
 					
                         </ul>
                     </nav>
@@ -162,6 +114,24 @@
         </div>
     </div>
     <!-- Breadcrumb End -->
+
+
+    
+    <script>
+
+        function change(buttonID) // no ';' here
+        {
+            var element = document.getElementById(buttonID);
+            var imageSrc = element.getAttribute("src");
+            if(imageSrc == "./img/heart-black.png"){
+                element.setAttribute("src", "./img/heart-red.png");
+            }
+            else{ 
+                element.setAttribute("src", "./img/heart-black.png");
+            }
+        }
+        
+        </script>
 
     <!-- Shop Section Begin -->
     <section class="shop spad">
@@ -203,6 +173,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-1.jpg">
+                            <input id="myButton1" class="like-button" onclick='change(myButton1.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Супи</span>
                             </div>
@@ -219,6 +190,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-2.jpg">
+                            <input id="myButton2" class="like-button" onclick='change(myButton2.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Сосове</span>
                             </div>
@@ -235,6 +207,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-3.jpg">
+                            <input id="myButton3" class="like-button" onclick='change(myButton3.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Салати</span>
                             </div>
@@ -251,6 +224,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-4.jpg">
+                            <input id="myButton4" class="like-button" onclick='change(myButton4.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Торти</span>
                             </div>
@@ -267,6 +241,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-5.jpg">
+                            <input id="myButton5" class="like-button" onclick='change(myButton5.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Предястия</span>
                             </div>
@@ -283,6 +258,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-6.jpg">
+                            <input id="myButton6" class="like-button" onclick='change(myButton6.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Основни ястия</span>
                             </div>
@@ -299,6 +275,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-7.jpg">
+                            <input id="myButton7" class="like-button" onclick='change(myButton7.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Десерти</span>
                             </div>
@@ -315,6 +292,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-8.jpg">
+                            <input id="myButton8" class="like-button" onclick='change(myButton8.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Основни ястия</span>
                             </div>
@@ -331,6 +309,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-9.jpg">
+                            <input id="myButton9" class="like-button" onclick='change(myButton9.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Основни ястия</span>
                             </div>
@@ -347,6 +326,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-10.jpg">
+                            <input id="myButton10" class="like-button" onclick='change(myButton10.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Салати</span>
                             </div>
@@ -363,6 +343,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-11.jpg">
+                            <input id="myButton11" class="like-button" onclick='change(myButton11.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Сосове</span>
                             </div>
@@ -379,6 +360,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/shop/product-12.jpg">
+                            <input id="myButton12" class="like-button" onclick='change(myButton12.id)' type="image" src="./img/heart-black.png"/>
                             <div class="product__label">
                                 <span>Предястия</span>
                             </div>
