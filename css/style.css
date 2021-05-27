@@ -4106,3 +4106,13 @@ button[class="btn btn-primary profile-button"]:hover{
 iframe[id="video"]{
 	margin: 10px 0px 0px 10%;
 }
+
+input[class="like-button1"]{
+	width: 30px;
+	margin-left: 30px;
+	display: inline-block;
+}
+
+h4[class="text"]{
+	display: inline-block;
+}

@@ -50,6 +50,18 @@ var text = {
            "Кисело мляко",
            "Сода"
         ]
+     },
+	 {
+        "category":"General Knowledge",
+        "type":"multiple",
+        "difficulty":"easy",
+        "question":"aaaaaaaaaaaaaa?",
+        "correct_answer":"Ленено семе",
+        "incorrect_answers":[
+           "Вода",
+           "Кисело мляко",
+           "Сода"
+        ]
      }
     ]
  }
@@ -92,7 +104,7 @@ fetch(
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3; //enter the number of questions you want to be loaded
+const MAX_QUESTIONS = 4; //enter the number of questions you want to be loaded
 
 startGame = () => {
     questionCounter = 0;
@@ -113,7 +125,7 @@ getNewQuestion = () => {
         return window.location.assign('./allgames.html');
     }
     questionCounter++;
-    progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+    progressText.innerText = `Въпрос ${questionCounter}/${MAX_QUESTIONS}`;
     //Update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 

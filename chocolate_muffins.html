@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="./css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
 	
 
 </head>
@@ -66,8 +67,64 @@
                         <ul>
                             
 							<li><a href="./index.html">Начална страница</a></li>
-                             <li class="active"><a href="./shop.html">Рецепти</a></li>
-							<li><a href="./about.html">Тестове</a></li>
+							<li><a href="./shop.html">Рецепти</a></li>
+							<li>
+                                <a class="popup" onmouseover="popupShow1()" onmouseout="popupHide1()">Q&A
+                                    <span class="popuptext" id="myPopup1">Активно само за регистирани потребители.</span>
+                                </a>
+							</li>   
+							<script>
+                            // When the user hovers over div, open the popup
+                            function popupShow1() {
+                              var popup = document.getElementById("myPopup1");
+                              popup.classList.toggle("show");
+                            }
+
+                            // When the user hovers out of div, close the popup
+                            function popupHide1() {
+                              var popup = document.getElementById("myPopup1");
+                              //use the function to specify after how much tiime to hide the popup (in milliseconds)
+                              //sleep(1000);
+                              popup.classList.toggle("show");
+                            }
+
+                            function sleep(milliseconds) {
+                             const date = Date.now();
+                            let currentDate = null;
+                             do {
+                                     currentDate = Date.now();
+                                } while (currentDate - date < milliseconds);
+                            }
+                            </script>
+                            <li>
+                                <a class="popup" onmouseover="popupShow()" onmouseout="popupHide()">Тестове
+                                    <span class="popuptext" id="myPopup">Активно само за регистирани потребители.</span>
+                                </a>
+                            </li>    
+                            <script>
+                            // When the user hovers over div, open the popup
+                            function popupShow() {
+                              var popup = document.getElementById("myPopup");
+                              popup.classList.toggle("show");
+                            }
+
+                            // When the user hovers out of div, close the popup
+                            function popupHide() {
+                              var popup = document.getElementById("myPopup");
+                              //use the function to specify after how much tiime to hide the popup (in milliseconds)
+                              //sleep(1000);
+                              popup.classList.toggle("show");
+                            }
+
+                            function sleep(milliseconds) {
+                             const date = Date.now();
+                            let currentDate = null;
+                             do {
+                                     currentDate = Date.now();
+                                } while (currentDate - date < milliseconds);
+                            }
+                            </script>
+
                             <li><a href="./contact.html">Контакти</a></li>
 					
                         </ul>
@@ -81,7 +138,21 @@
     <!-- Breadcrumb Begin -->
     
     <!-- Breadcrumb End -->
+<script>
 
+        function change(buttonID) // no ';' here
+        {
+            var element = document.getElementById(buttonID);
+            var imageSrc = element.getAttribute("src");
+            if(imageSrc == "./img/heart-black.png"){
+                element.setAttribute("src", "./img/heart-red.png");
+            }
+            else{ 
+                element.setAttribute("src", "./img/heart-black.png");
+            }
+        }
+        
+        </script>
     <!-- Shop Details Section Begin -->
     <section class="product-details spad">
         <div class="container">
@@ -118,11 +189,10 @@
                 <div class="col-lg-6">
                     <div class="product__details__text">
                         <div class="product__label">Десерти</div>
-                        <h4>Шоколадови мъфини</h4>
+						<br/>
+                        <h4 class="text">Шоколадови мъфини </h4>
+						<input id="myButton1" class="like-button1" onclick='change(myButton1.id)' type="image" src="./img/heart-black.png"/>
                         <p>Както е известно шоколадът е много полезен и помага на хората да се чувстват по-щастливи. Така че просто няма причина, за да не си забъркате на бързо тези вкусни шоколадови кексчета! ;)</p>
-                        <div class="product__details__option">
-                            <a href="#" class="heart__btn"><span class="icon_heart_alt"></span></a>
-                        </div>
                     </div>
                 </div>
             </div>
